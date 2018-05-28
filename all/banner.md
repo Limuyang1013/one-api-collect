@@ -1,4 +1,4 @@
-# ALL页面轮播图相关信息接口
+## 轮播图相关信息接口
 
 GET：/api/banner/list/3?channel=cool
 
