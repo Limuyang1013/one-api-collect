@@ -1,6 +1,6 @@
 # ONE页面涉及到的接口
 
-## 1.`获取近十天图文集合ID的数组`
+#### 1.`获取近十天图文集合ID的数组`
 
 GET：/api/onelist/idlist/
 
@@ -26,7 +26,7 @@ GET：/api/onelist/idlist/
 }
 Tips：第一项即为今天的图文集合数组的ID
 ```
-## 2.`获取当天的图文集合信息以及当地天气信息`
+#### 2.`获取当天的图文集合信息以及当地天气信息`
  
  GET：/api/channel/one/0/{location}
  
@@ -712,7 +712,7 @@ Tips：第一项即为今天的图文集合数组的ID
 
 Tips：location位置信息为必传参数
 ```
-## 3. 获取xx年xx月份的往期列表(首页点击头部ToolBar进入往期列表页面)
+#### 3. 获取xx年xx月份的往期列表(首页点击头部ToolBar进入往期列表页面)
 
 GET：/api/feeds/list/{yyyy-mm}?channel=cool
 
