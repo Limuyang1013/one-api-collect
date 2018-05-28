@@ -1,6 +1,6 @@
 # ONE页面涉及到的接口
 
-1.`获取近十天图文集合ID的数组`
+## 1.`获取近十天图文集合ID的数组`
 
 GET：/api/onelist/idlist/
 
@@ -26,9 +26,9 @@ GET：/api/onelist/idlist/
 }
 Tips：第一项即为今天的图文集合数组的ID
 ```
-2.`获取当天的图文集合信息以及当地天气信息`
+## 2.`获取当天的图文集合信息以及当地天气信息`
  
- GET：/api/channel/one/0/${location}
+ GET：/api/channel/one/0/{location}
  
  示例：http://v3.wufazhuce.com:8000/api/channel/one/0/上海
  
@@ -711,4 +711,159 @@ Tips：第一项即为今天的图文集合数组的ID
 }
 
 Tips：location位置信息为必传参数
+```
+## 3. 获取xx年xx月份的往期列表(首页点击头部ToolBar进入往期列表页面)
+
+GET：/api/feeds/list/{yyyy-mm}?channel=cool
+
+示例：http://v3.wufazhuce.com:8000/api/feeds/list/2018-05?channel=cool
+
+返回示例：
+
+```
+{
+    "res": 0, 
+    "data": [
+        {
+            "id": 15406, 
+            "date": "2018-05-28", 
+            "cover": "http://image.wufazhuce.com/FpM8s5kk5nPtNsai4VRwcuUtXyuf"
+        }, 
+        {
+            "id": 15377, 
+            "date": "2018-05-27", 
+            "cover": "http://image.wufazhuce.com/Fg_dmHn5t7cTe_cEV5YpHy9wq4tQ"
+        }, 
+        {
+            "id": 15376, 
+            "date": "2018-05-26", 
+            "cover": "http://image.wufazhuce.com/Fu1qjJjsQ_wZ_3BR-utNJwUIGY-P"
+        }, 
+        {
+            "id": 15374, 
+            "date": "2018-05-25", 
+            "cover": "http://image.wufazhuce.com/Fqe_prpZYRxIjYAp3PnpfC3h-U_t"
+        }, 
+        {
+            "id": 15373, 
+            "date": "2018-05-24", 
+            "cover": "http://image.wufazhuce.com/FgFBVirpR6bBC95VBAv75JZqOGWx"
+        }, 
+        {
+            "id": 15371, 
+            "date": "2018-05-23", 
+            "cover": "http://image.wufazhuce.com/Fj68SGk9ikiNWETRjy0Fq6X7fhKe"
+        }, 
+        {
+            "id": 15370, 
+            "date": "2018-05-22", 
+            "cover": "http://image.wufazhuce.com/FhZIF8999UNT3dHxETXxycdF3fEn"
+        }, 
+        {
+            "id": 15330, 
+            "date": "2018-05-21", 
+            "cover": "http://image.wufazhuce.com/Fsp_0kSbO9dBqfvfTR8f_5hHi7AN"
+        }, 
+        {
+            "id": 15329, 
+            "date": "2018-05-20", 
+            "cover": "http://image.wufazhuce.com/Fm3V7KAcLdfe33O9Ie-Cbb_0rcKt"
+        }, 
+        {
+            "id": 15328, 
+            "date": "2018-05-19", 
+            "cover": "http://image.wufazhuce.com/FgtDy8ym3xzbyAnEg5BujakzsP8s"
+        }, 
+        {
+            "id": 15326, 
+            "date": "2018-05-18", 
+            "cover": "http://image.wufazhuce.com/FqY1m9k-bOwOj3oPM9TlyqYfYQN_"
+        }, 
+        {
+            "id": 15325, 
+            "date": "2018-05-17", 
+            "cover": "http://image.wufazhuce.com/Fl5A9GJNO6qgvLX2UwONNPeRnHo1"
+        }, 
+        {
+            "id": 15323, 
+            "date": "2018-05-16", 
+            "cover": "http://image.wufazhuce.com/FrVMbKMZn6e3XP9LELHHytsOUjQZ"
+        }, 
+        {
+            "id": 15322, 
+            "date": "2018-05-15", 
+            "cover": "http://image.wufazhuce.com/FmxIIqf2BEBZ-IsmmvXygpRdHXG6"
+        }, 
+        {
+            "id": 15266, 
+            "date": "2018-05-14", 
+            "cover": "http://image.wufazhuce.com/FoMQToEdCDYIzn5XT2sAJvmhD7LI"
+        }, 
+        {
+            "id": 15256, 
+            "date": "2018-05-13", 
+            "cover": "http://image.wufazhuce.com/FmjZVIZV_Co4T34d2nyoN0DJzx2U"
+        }, 
+        {
+            "id": 15308, 
+            "date": "2018-05-12", 
+            "cover": "http://image.wufazhuce.com/Fg8EhqDMIEK-OKkknwTA43giOpSm"
+        }, 
+        {
+            "id": 15264, 
+            "date": "2018-05-11", 
+            "cover": "http://image.wufazhuce.com/FjCua-t2k4a3Twe1qjbov1FD7Yox"
+        }, 
+        {
+            "id": 15262, 
+            "date": "2018-05-10", 
+            "cover": "http://image.wufazhuce.com/FkdoXuVvzt8W0LCikgeRa02YGGAZ"
+        }, 
+        {
+            "id": 15261, 
+            "date": "2018-05-09", 
+            "cover": "http://image.wufazhuce.com/FnZxB2e_izm0TOV7KMW1jjPsEROS"
+        }, 
+        {
+            "id": 15259, 
+            "date": "2018-05-08", 
+            "cover": "http://image.wufazhuce.com/Fo3bLqi6qTmXPna1USe1ulnDxL93"
+        }, 
+        {
+            "id": 15258, 
+            "date": "2018-05-07", 
+            "cover": "http://image.wufazhuce.com/FnuBzVt7Yn5ZN3t_gU4sKrkz4vWM"
+        }, 
+        {
+            "id": 15223, 
+            "date": "2018-05-06", 
+            "cover": "http://image.wufazhuce.com/FkgfPCVGOuzsCpmhKH36oTHd6FPM"
+        }, 
+        {
+            "id": 15221, 
+            "date": "2018-05-05", 
+            "cover": "http://image.wufazhuce.com/FiFCwrkNsYt_y5NKq3OK3si6pX27"
+        }, 
+        {
+            "id": 15220, 
+            "date": "2018-05-04", 
+            "cover": "http://image.wufazhuce.com/FpbQixPRlalOZIQFGv0umlTbB7BL"
+        }, 
+        {
+            "id": 15218, 
+            "date": "2018-05-03", 
+            "cover": "http://image.wufazhuce.com/FvG1nNlR-7GnGh0TuP_Eo24EKb7T"
+        }, 
+        {
+            "id": 15217, 
+            "date": "2018-05-02", 
+            "cover": "http://image.wufazhuce.com/FvgzVLpzK_rWI-UFafVIEQd3MhmU"
+        }, 
+        {
+            "id": 15172, 
+            "date": "2018-05-01", 
+            "cover": "http://image.wufazhuce.com/FnN7xlBRjml1BT0uDQcr-PC7Qpgm"
+        }
+    ]
+}
 ```
