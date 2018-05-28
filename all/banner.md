@@ -1186,7 +1186,8 @@ GET：/api/comment/praiseandtime/topic/{content_id}/{last_id}?channel=cool(Tips:
 
 返回示例：
 
-``{
+```
+{
     "res": 0, 
     "data": {
         "count": 440, 
@@ -1605,6 +1606,5 @@ GET：/api/comment/praiseandtime/topic/{content_id}/{last_id}?channel=cool(Tips:
             }
         ]
     }
-}`
-
+}
 ```
