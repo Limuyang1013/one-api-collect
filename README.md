@@ -4,7 +4,8 @@
 
 仅供学习交流使用，请勿滥用
 
-[`文档地址`](http://www.limuyang.cc/one-api-collect/#/)
+[文档地址](http://www.limuyang.cc/one-api-collect/#/)
+
 
 - `版本`：4.5.4
 - `工具`：Fiddler
